@@ -98,9 +98,19 @@ var canvasDots = function() {
     mousePosition.x = window.innerWidth / 2;
     mousePosition.y = window.innerHeight / 2;
 
-    setInterval(createDots, 1000/30);
+    var animation = setInterval(createDots, 1000/30);
+
+    $(window).on('resize', function(){
+        clearInterval(animation)
+    });
 };
 
 window.onload = function() {
     canvasDots();
+    window.addEventListener('resize', resizeCanvas, false);
 };
+
+function resizeCanvas(){
+    canvasDots()
+}
+

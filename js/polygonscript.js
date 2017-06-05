@@ -91,8 +91,8 @@ var canvasDots = function() {
     }
 
     window.onmousemove = function(parameter) {
-        mousePosition.x = parameter.pageX;
-        mousePosition.y = parameter.pageY;
+        mousePosition.x = parameter.x;
+        mousePosition.y = parameter.y;
     }
 
     mousePosition.x = window.innerWidth / 2;

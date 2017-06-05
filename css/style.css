@@ -1,3 +1,7 @@
+html{
+	font-family: 'Lato', sans-serif;
+}
+
 canvas {
   position: fixed;
   width: 100%;
@@ -7,16 +11,31 @@ canvas {
   left: 0;
   bottom: 0; 
   z-index: -1;
+  border: none;
+}
+
+.site-intro{
+	text-align: center;
+	height: 100vh;
+	vertical-align: middle;
+	padding-top:35vh;
+	color:#777;
 }
 
 .site-title{
-	text-align: center;
-	font-family: Arial;
-	height: 100vh;
-	vertical-align: middle;
 	font-size: 60px;
-	padding-top:35vh;
-	color:#777;
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+}
+
+.lato-light{
+	font-weight: 300;
+	font-family: 'Lato', sans-serif;
+}
+
+.lato-bold{
+	font-weight: 400;
+	font-family: 'Lato', sans-serif;
 }
 
 .navbar-default {
@@ -27,4 +46,56 @@ canvas {
 #portfolio{
 	height: 800px;
 	background: rgba(56, 56, 56, 0.5);
+}
+
+
+
+/*Arrows CSS*/
+
+.arrows {
+	width: 60px;
+	height: 72px;
+	position: absolute;
+	left: 50%;
+	margin-left: -30px;
+	bottom: 10%;
+}
+
+.arrows path {
+	stroke: black;
+	fill: transparent;
+	stroke-width: 1px;	
+	animation: arrow 2s infinite;
+	-webkit-animation: arrow 2s infinite; 
+}
+
+@keyframes arrow
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+@-webkit-keyframes arrow /*Safari and Chrome*/
+{
+0% {opacity:0}
+40% {opacity:1}
+80% {opacity:0}
+100% {opacity:0}
+}
+
+.arrows path.a1 {
+	animation-delay:-1s;
+	-webkit-animation-delay:-1s; /* Safari 和 Chrome */
+}
+
+.arrows path.a2 {
+	animation-delay:-0.5s;
+	-webkit-animation-delay:-0.5s; /* Safari 和 Chrome */
+}
+
+.arrows path.a3 {	
+	animation-delay:0s;
+	-webkit-animation-delay:0s; /* Safari 和 Chrome */
 }

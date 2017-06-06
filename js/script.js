@@ -1,4 +1,4 @@
-// Select all links with hashes
+// Allows for smooth scrolling when clicking on double arrows
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')
@@ -34,3 +34,13 @@ $('a[href*="#"]')
       }
     }
   });
+
+// Makes navbar 100% transparent after 1/2 of page scroll
+$(window).scroll(function () { 
+  if ($(window).scrollTop() + 120 > $('body').height()/ 2 ) {
+    $('nav').css('background-color', 'rgba(255,255,255,1)');
+  }
+  else{
+    $('nav').css('background-color', 'rgba(255,255,255,.6)');
+  } 
+});

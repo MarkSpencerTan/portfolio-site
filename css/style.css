@@ -4,14 +4,13 @@ html{
 
 canvas {
   position: fixed;
-  width: 100%;
-  height: 100%;
-  top: 0;
+  /*width: 100%;
+  height: 100%;*/
+/*  top: 0;
   right: 0;
   left: 0;
-  bottom: 0; 
+  bottom: 0; */
   z-index: -1;
-  border: none;
 }
 
 .site-intro{
@@ -24,8 +23,9 @@ canvas {
 
 .site-title{
 	font-size: 60px;
-	font-weight: 300;
+	font-weight: 100;
 	font-family: 'Lato', sans-serif;
+	letter-spacing: 15px;
 }
 
 .lato-light{
@@ -38,14 +38,46 @@ canvas {
 	font-family: 'Lato', sans-serif;
 }
 
+/*Navbar styles*/
 .navbar-default {
-  background: rgba(255,255,255,.8);
+  background: rgba(255,255,255,.6);
   border: none;
 }
 
+ul.dropdown-menu {
+    background: rgba(255,255,255,.8);
+    border-radius:20px;
+    padding-bottom:20px;
+}
+
+.navbar-collapse {
+    background: white;
+}
+
 #portfolio{
-	height: 800px;
+	height: 100%;
 	background: rgba(56, 56, 56, 0.5);
+}
+
+#portfolio .col-md-4 div{
+	background:white;
+	border-radius:15px;
+	margin:20px;
+
+}
+
+#portfolio .row{
+	margin:10%;
+	margin-top:20px;
+}
+
+/*footer*/
+#footer{
+	height: 100px;
+	text-align: center;
+	background: rgba(255,255,255,.8);
+	padding-top:20px;
+	padding-bottom: 20px;
 }
 
 
@@ -98,4 +130,26 @@ canvas {
 .arrows path.a3 {	
 	animation-delay:0s;
 	-webkit-animation-delay:0s; /* Safari 和 Chrome */
+}
+
+/*Media Queries*/
+@media only screen and (max-width: 550px) {
+    canvas{
+    	display:none !important;
+    }
+    .site-intro{
+		padding-top:25vh;
+	}
+	.site-title{
+		font-size: 50px;
+	}
+	.site-intro{
+		background-color:rgba(255,255,255,.6);
+	}
+	body {
+    	background-image: url('../img/mobilebg.png') !important;
+    	background-position: center center;
+    	background-attachment: fixed;
+    	background-repeat: no-repeat;
+	}
 }

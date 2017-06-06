@@ -49,9 +49,9 @@
 		  </div>
 		</nav>
 
-		<div class="site-intro">
+		<div id="site-intro" class="site-intro">
 			<span class="site-title lato-light">MARK SPENCER <span class="lato-bold">TAN</span></span>
-			<h4 class="lato-light" style="font-size:25px;">DEVELOPER</h4>
+			<h4 class="lato-light" style="font-size:25px;">SOFTWARE ENGINEER</h4>
 			<a id="arrow-prev" href="#portfolio">
 			<svg class="arrows">
 				<path class="a1" d="M0 0 L30 32 L60 0"></path>
@@ -64,24 +64,43 @@
 
 		<!-- Portfolio Section -->
 		<div id="portfolio" class="container-fluid bg-3 text-center">    
-			<h1 class="lato-light" style="color:white; margin-top:150px;letter-spacing: 15px;">RECENT PROJECTS</h3><br>
-			<div class="row">
-				<div class="col-md-4">
+			<h1 id="portfolio-title" class="lato-light">RECENT PROJECTS</h3><br>
+			<div id="categories" class="lato-light">
+				<button type="button" class="btn btn-secondary">Web Dev</button>
+				<button type="button" class="btn btn-secondary">Scripts</button>
+				<button type="button" class="btn btn-secondary">Software</button>
+				<button type="button" class="btn btn-secondary">Android</button>
+			</div>
+			<div id="portfolio-row" class="row">
+				<div class="col-sm-4">
 					<div>
 					<!-- <p>Some text..</p> -->
-					<img src="https://placehold.it/300x300?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+						<a href="">
+							<img src="img/markit-square.png" class="img-responsive" style="width:100%" alt="Image">
+							
+						</a>
+					</div>
+					<div class="project-overlay">
+						<h2>Mark-It | Checklist Webapp</h2><br>
+						<p class="text-muted">A small webapp I made using JQuery/JavaScript. It’s a basic checklist maker where you can order checklist items around and check them off as you are finished with them. Checked items can either be reloaded back into ...</p>
 					</div>
 				</div>
-				<div class="col-md-4"> 
+				<div class="col-sm-4"> 
 					<div>		
 					<!-- <p>Some text..</p> -->
-					<img src="https://placehold.it/300x300?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+					<img src="img/foodisco-square.png" class="img-responsive" style="width:100%" alt="Image">
 					</div>
 				</div>
-				<div class="col-md-4"> 
+				<div class="col-sm-4"> 
 					<div>
 					<!-- <p>Some text..</p> -->
-					<img src="https://placehold.it/300x300?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+					<img src="img/flash-square.png" class="img-responsive" style="width:100%" alt="Image">
+					</div>
+				</div>
+				<div class="col-sm-4"> 
+					<div>
+					<!-- <p>Some text..</p> -->
+					<img src="img/flash-square.png" class="img-responsive" style="width:100%" alt="Image">
 					</div>
 				</div>
 			</div>
@@ -101,5 +120,7 @@
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/polygonscript.js"></script>
+<script type="text/javascript" src="js/loadprojects.js"></script>
+
 
 

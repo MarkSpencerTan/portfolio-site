@@ -37,10 +37,20 @@ $('a[href*="#"]')
 
 // Makes navbar 100% transparent after 1/2 of page scroll
 $(window).scroll(function () { 
-  if ($(window).scrollTop() + 120 > $('body').height()/ 2 ) {
+
+  if ($(window).scrollTop() > $('#site-intro').height() ) {
     $('nav').css('background-color', 'rgba(255,255,255,1)');
+    startLoadAnimation();
   }
   else{
     $('nav').css('background-color', 'rgba(255,255,255,.6)');
   } 
 });
+
+function startLoadAnimation(){
+    var delay = 0;
+    $('#portfolio .col-sm-4>div:first-child').each(function(index){
+        $(this).delay(delay).animate({margin:'20px', opacity:1})
+        delay += 300
+    });
+}

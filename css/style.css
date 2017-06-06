@@ -50,7 +50,7 @@ ul.dropdown-menu {
     padding-bottom:20px;
 }
 
-.navbar-collapse {
+.container-fluid .in{
     background: white;
 }
 
@@ -59,16 +59,63 @@ ul.dropdown-menu {
 	background: rgba(56, 56, 56, 0.5);
 }
 
-#portfolio .col-md-4 div{
+#portfolio .col-sm-4>div:first-child{
 	background:white;
 	border-radius:15px;
-	margin:20px;
+	margin:80px;
+	opacity: 0;
+}
 
+#portfolio img{
+	border-radius:15px;
 }
 
 #portfolio .row{
 	margin:10%;
 	margin-top:20px;
+}
+
+#portfolio-title{
+	color:white; 
+	margin-top:120px;
+	letter-spacing: 15px;
+}
+
+.project-overlay{
+	border-radius:15px;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	height: 90%;
+	width: 90%;
+	opacity: 0;
+	margin:80px;
+	overflow: hidden;
+	/*transition: .5s ease;*/
+	/*background-color: #008CBA;*/
+}
+
+#portfolio .col-sm-4:hover .project-overlay{
+	opacity: 1;
+}
+
+#categories{
+	margin-bottom:50px;
+}
+
+#categories button{
+	transition: background 0.5s ease;
+	text-transform: uppercase !important;
+	font-size: 12px;
+	color:gray;
+	margin:10px;
+}
+
+#categories button:hover, #categories button:focus{
+	background:white;
+	color:black;
 }
 
 /*footer*/

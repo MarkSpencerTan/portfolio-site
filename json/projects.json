@@ -1,0 +1,22 @@
+{
+	"flash":{
+		"id":"flash",
+		"categories":["webdev"],
+		"heading":"The Flash",
+		"subheading":"CECS 300 Final Project",
+		"screenshot_url":"img/screeshots/flash_screenshot.png",
+		"logo":"img/flash-square.png",
+		"url":"http://flash.marktan.us",
+		"description":"In my Cecs 300 class, we were asked to develop a wordpress website on anything we wanted to and I chose to make a website about a Super Hero from the DC comics – The Flash. I was inspired to make this website due to my great interest in the TV show that the CW is currently airing. This website is suppose to be a mock website of the webapp they have in the show, where common people can report and post information about new Super Humans (Meta Humans) roaming about their city.",
+		"features": ["Child Themes", "Php", "Custom Post Types", "Custom Fields", "Template Files", "Plugin Translation/Translation Files", "Wordpress Custom Login", "Database migration tools/ backup", "Custom Archives"]
+	},
+	"markit":{
+
+	},
+	"idea":{
+
+	},
+	"foodisco":{
+
+	}
+}

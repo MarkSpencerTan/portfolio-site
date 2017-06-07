@@ -49,8 +49,8 @@ $(window).scroll(function () {
 
 function startLoadAnimation(){
     var delay = 0;
-    $('#portfolio .col-sm-4>div:first-child').each(function(index){
-        $(this).delay(delay).animate({margin:'20px', opacity:1})
+    $('#portfolio-row .col-sm-4').each(function(index){
+        $(this).delay(delay).animate({opacity:1})
         delay += 300
     });
 }

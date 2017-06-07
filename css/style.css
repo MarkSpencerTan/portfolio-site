@@ -59,11 +59,11 @@ ul.dropdown-menu {
 	background: rgba(56, 56, 56, 0.5);
 }
 
-#portfolio .col-sm-4>div:first-child{
+#portfolio .col-sm-4 a div:first-child{
 	background:white;
 	border-radius:15px;
-	margin:80px;
-	opacity: 0;
+	width: 100%;
+	height: 100%;
 }
 
 #portfolio img{
@@ -71,8 +71,18 @@ ul.dropdown-menu {
 }
 
 #portfolio .row{
-	margin:10%;
+	margin:20%;
 	margin-top:20px;
+}
+
+
+
+#portfolio-row .col-sm-4{
+	opacity: 0;
+}
+
+.portfolio-container{
+	position: relative;
 }
 
 #portfolio-title{
@@ -82,27 +92,39 @@ ul.dropdown-menu {
 }
 
 .project-overlay{
-	border-radius:15px;
 	position: absolute;
+	width: 100%;
+	height: 100%;
 	top: 0;
-	bottom: 0;
+	bottom:0;
 	left: 0;
 	right: 0;
-	height: 90%;
-	width: 90%;
 	opacity: 0;
-	margin:80px;
+	padding: 20px;
 	overflow: hidden;
-	/*transition: .5s ease;*/
+	border-radius: 15px;
+	background:rgba(255,255,255,1);
+	transition: .5s ease;
 	/*background-color: #008CBA;*/
+}
+
+.project-overlay h3{
+	font-family: 'Lato';
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 15px;
 }
 
 #portfolio .col-sm-4:hover .project-overlay{
 	opacity: 1;
 }
 
+.col-sm-4{
+	padding:10px;
+}
+
 #categories{
-	margin-bottom:50px;
+	margin-bottom:70px;
 }
 
 #categories button{

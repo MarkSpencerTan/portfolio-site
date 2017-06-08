@@ -54,3 +54,9 @@ function startLoadAnimation(){
         delay += 300
     });
 }
+
+/* activate scrollspy menu */
+$('body').scrollspy({
+  target: '#myNavbar',
+  offset: 52
+});

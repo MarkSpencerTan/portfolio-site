@@ -1,4 +1,16 @@
 {
+	"foodisco":{
+		"id":"foodisco",
+		"categories":["webdev"],
+		"heading":"Foodisco",
+		"subheading": "Discover New Food and Restaurants",
+		"screenshot_url":"img/screeshots/foodisco_screenshot.png",
+		"logo":"img/foodisco-square.png",
+		"url":"http://foodisco.marktan.us",
+		"short_desc":"A webapp that helps you find the best restaurant nearby to eat.",
+		"description":"Foodisco is the best way to find new restaurants near you. Gone are the days of indecisive friend groups taking hours to decide where to eat. Use Foodisco to find some of the best restaurants in your area.",
+		"features": ["Fusion Yelp Api", "Google Maps API", "Jquery", "Php", "Javascript","Firebase", "NoSQL", "Responsive Design", "Bootstrap"]
+	},
 	"flash":{
 		"id":"flash",
 		"categories":["webdev"],
@@ -7,16 +19,64 @@
 		"screenshot_url":"img/screeshots/flash_screenshot.png",
 		"logo":"img/flash-square.png",
 		"url":"http://flash.marktan.us",
+		"short_desc":"A Wordpress website inspired by the marvel superhero: The Flash",
 		"description":"In my Cecs 300 class, we were asked to develop a wordpress website on anything we wanted to and I chose to make a website about a Super Hero from the DC comics – The Flash. I was inspired to make this website due to my great interest in the TV show that the CW is currently airing. This website is suppose to be a mock website of the webapp they have in the show, where common people can report and post information about new Super Humans (Meta Humans) roaming about their city.",
-		"features": ["Child Themes", "Php", "Custom Post Types", "Custom Fields", "Template Files", "Plugin Translation/Translation Files", "Wordpress Custom Login", "Database migration tools/ backup", "Custom Archives"]
+		"features": [
+			"Child Themes", 
+			"Bootstrap",
+			"Php",
+			"Custom Post Types", 
+			"Custom Fields", 
+			"Template Files", 
+			"Plugin Translation/Translation Files", 
+			"Wordpress Custom Login", 
+			"Database migration tools/ backup", 
+			"Custom Archives",
+			"Responsive Design"
+		]
 	},
-	"markit":{
-
+	"pkmndex":{
+		"id":"foodisco",
+		"categories":["webdev"],
+		"heading":"Foodisco",
+		"subheading": "Discover New Food and Restaurants",
+		"logo":"img/foodisco-square.png",
+		"url":"http://foodisco.marktan.us",
+		"short_desc":"",
+		"description":"Foodisco is the best way to find new restaurants near you. Gone are the days of indecisive friend groups taking hours to decide where to eat. Use Foodisco to find some of the best restaurants in your area.",
+		"features": ["Fusion Yelp Api", "Google Maps API", "Jquery", "Php", "HTML", "CSS", "Javascript","Firebase", "NoSQL", "Responsive Design", "Bootstrap"]
 	},
 	"idea":{
-
+		"id":"foodisco",
+		"categories":["webdev"],
+		"heading":"Foodisco",
+		"subheading": "Discover New Food and Restaurants",
+		"logo":"img/foodisco-square.png",
+		"url":"http://foodisco.marktan.us",
+		"short_desc":"",
+		"description":"Foodisco is the best way to find new restaurants near you. Gone are the days of indecisive friend groups taking hours to decide where to eat. Use Foodisco to find some of the best restaurants in your area.",
+		"features": ["Fusion Yelp Api", "Google Maps API", "Jquery", "Php", "HTML", "CSS", "Javascript","Firebase", "NoSQL", "Responsive Design", "Bootstrap"]
 	},
-	"foodisco":{
-
+	"suitup":{
+		"id":"foodisco",
+		"categories":["webdev"],
+		"heading":"Foodisco",
+		"subheading": "Discover New Food and Restaurants",
+		"logo":"img/foodisco-square.png",
+		"url":"http://foodisco.marktan.us",
+		"short_desc":"",
+		"description":"Foodisco is the best way to find new restaurants near you. Gone are the days of indecisive friend groups taking hours to decide where to eat. Use Foodisco to find some of the best restaurants in your area.",
+		"features": ["Fusion Yelp Api", "Google Maps API", "Jquery", "Php", "HTML", "CSS", "Javascript","Firebase", "NoSQL", "Responsive Design", "Bootstrap"]
+	},
+	"markit":{
+		"id":"foodisco",
+		"categories":["webdev"],
+		"heading":"Foodisco",
+		"subheading": "Discover New Food and Restaurants",
+		"logo":"img/foodisco-square.png",
+		"url":"http://foodisco.marktan.us",
+		"short_desc":"",
+		"description":"Foodisco is the best way to find new restaurants near you. Gone are the days of indecisive friend groups taking hours to decide where to eat. Use Foodisco to find some of the best restaurants in your area.",
+		"features": ["Fusion Yelp Api", "Google Maps API", "Jquery", "Php", "HTML", "CSS", "Javascript","Firebase", "NoSQL", "Responsive Design", "Bootstrap"]
 	}
 }

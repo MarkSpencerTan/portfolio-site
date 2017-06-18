@@ -1,0 +1,15 @@
+canvas{
+	background:black;
+}
+
+/*Navbar styles*/
+.navbar-default {
+  background: rgba(0,0,0,.6);
+  border: none;
+}
+
+ul.dropdown-menu {
+    background: rgba(0,0,0,.8);
+    border-radius:20px;
+    padding-bottom:20px;
+}

@@ -47,6 +47,8 @@ $(window).scroll(function () {
   } 
 });
 
+
+// Fades portfolio items into view
 function startLoadAnimation(){
     var delay = 0;
     $('#portfolio-row .col-sm-4').each(function(index){

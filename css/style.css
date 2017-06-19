@@ -145,23 +145,20 @@ ul.dropdown-menu {
 }
 
 
-
-
-
-#project-title{
+#project-heading{
 	text-transform: uppercase;
 	text-align: center;
 	font-size: 30px;
 	font-family: "Lato";
 	font-weight: "100";
-	letter-spacing:10px;
+	letter-spacing:8px;
 }
 
-.modal-subtitle, #project-subtitle{
+.modal-subtitle, #project-subheading{
 	text-transform: uppercase;
 	text-align: center;
 	color:gray;
-	font-size: 20px;
+	font-size: 18px;
 }
 
 #project-screenshot{

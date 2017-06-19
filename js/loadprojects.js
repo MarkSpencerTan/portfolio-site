@@ -42,10 +42,11 @@ function loadProjects(projects){
 		var desc = project.short_desc
 		var features = project.features
 		var categories = project.categories
+		var project_id = project.id
 
 		portfolio_html += `
-		<div class="col-sm-4">
-			<a role="button" data-toggle="modal" data-target="#project-modal" href="">
+		<div  class="col-sm-4">
+			<a role="button" data-toggle="modal" data-target="#project-modal" href="" onclick="loadModal('${project_id}')">
 			<div class="portfolio-container">
 				<div>
 					<img src="${logo}" style="width:100%" alt="Image">
@@ -63,22 +64,33 @@ function loadProjects(projects){
 
 }
 
-
-$('#portfolio-row .col-sm-4 a').on('click', function(){
-	console.log("clicked to open modal")
-});
-
-
-function loadModal(project){
-	var project = projects[val]
+function loadModal(id){
+	var project = $PROJECTS[id]
 	var heading = project.heading
 	var subheading = project.subheading
 	var link = project.url
-	var logo = project.logo
-	var screenshot = project.screenshot
-	var desc = project.short_desc
+	var screenshot = project.screenshot_url
 	var features = project.features
 	var categories = project.categories
+	var description = project.description
+	var git = project.git
+
+	$("#project-heading").text(heading)
+	$("#project-subheading").text(subheading)
+	$("#project-screenshot").attr('src', screenshot)
+	$("#project-desc").text(description)
+	$(".project-link").attr('href', link)
+
+	// Check if git is available and then prepend the git button on the modal footer
+	if(git != null){
+		var git_html = `
+		<a class="git-link" href="${git}" target="_blank">
+			<button class="text-center btn btn-default">Git</button>
+		</a>
+		`
+		$('.modal-footer').prepend(git_html)
+	}
+
 }
 
 

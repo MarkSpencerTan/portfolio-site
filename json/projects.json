@@ -35,5 +35,32 @@
 			"Custom Archives",
 			"Responsive Design"
 		]
+	},
+	"suitup":{
+		"id":"suitup",
+		"categories":["android"],
+		"heading":"Suit-Up",
+		"subheading":"Wardrobe Generator",
+		"screenshot_url":"img/screenshots/suitup_screenshot.png",
+		"logo":"img/suitup-square.png",
+		"url":"https://www.youtube.com/watch?v=ofhATZeeQFI",
+		"short_desc":"SuitUp is an android application that will help you select a combination of your clothes to wear for the day.",
+		"description":"SuitUp is an android application that will help you select a combination of your clothes to wear for the day. You can take photos of your clothes with the app and it will save them on the sqlite database. The app will then be able to generate different sets of combination based on the apparel you have saved as well as exclude those combinations you do not like.",
+		"features": [
+			"Automatic Weather Detection via Yahoo Weather API",
+			"Location Services with GPS",
+			"SQLite Database",
+			"Wardrobe Randomizer Algorithm",
+			"Custom Splashscreen Animation",
+			"Camera API and rescaling images for optimization",
+			"Sensors (Shake to get a combination)",
+			"Fragments",
+			"File Providers",
+			"Spinners",
+			"Menu Bar",
+			"Permissions",
+			"FileSystem"
+		],
+		"git":"https://github.com/DavidVan/CECS-453-Final-Project/tree/master/app/src"
 	}
 }

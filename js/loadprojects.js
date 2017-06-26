@@ -1,9 +1,6 @@
 
 
-// Load the Projects into the portfolio section and create a modal for each one
-
-// If a tile is clicked on, load the appropriate values
-
+// Load the Projects from the JSON file
 $(function () {
     $.ajax({
         beforeSend : function (xhr_jquery) {
@@ -13,12 +10,12 @@ $(function () {
         }
     });
     
-    //function that collects data from json
+    //function that collects data from json and loads the result to $PROJECTS
 	$.getJSON( "json/projects.json")
 		.done(function(data){
 			$PROJECTS = data;
-			console.log($PROJECTS)
 			loadProjects($PROJECTS)
+			loadCategories()
 		})
 		.fail(function(data){
 			console.log("Can't load JSON")
@@ -61,10 +58,50 @@ function loadProjects(projects){
 	});
 	// load the html into the portfolio section
 	$('#portfolio-row').html(portfolio_html)
-
 }
 
+function loadCategories(){
+	$CATEGORIES = {
+		'All' : [],
+		'Web Dev': [],
+		'Software' : [],
+		'Android' : []
+	}
+	// for each key of a project, put it in every category it belongs in $CATEGORIES
+	$.each(Object.keys($PROJECTS), function(i, val){
+		var categories = $PROJECTS[val].categories
+		console.log(categories)
+		$CATEGORIES['All'].push(val)
+		if($.inArray('webdev', categories) >= 0){
+			$CATEGORIES['Web Dev'].push(val)
+		}
+		if($.inArray('software', categories) >= 0){
+			$CATEGORIES['Software'].push(val)
+		}
+		if($.inArray('android', categories) >= 0){
+			$CATEGORIES['Android'].push(val)
+		}
+	})
+}
+
+// on click handler for a category button
+$('#categories button').on('click', function(){
+	var category = $(this).text()
+	var projList = $CATEGORIES[category]
+	var projects = {}
+	// load each project that is in the category into a temp projects dict
+	$.each(projList, function(i, val){
+		projects[val] = $PROJECTS[val]
+	})
+
+	// load them into the view
+	loadProjects(projects)
+	startLoadAnimation() // from scrpt.js
+})
+
+
 function loadModal(id){
+	/* When a project is loaded, the project's details will be loaded on the modal*/
 	var project = $PROJECTS[id]
 	var heading = project.heading
 	var subheading = project.subheading
@@ -79,18 +116,36 @@ function loadModal(id){
 	$("#project-subheading").text(subheading)
 	$("#project-screenshot").attr('src', screenshot)
 	$("#project-desc").text(description)
-	$(".project-link").attr('href', link)
+
+	// Load features
+	var feature_html = ""
+	for(i = 0; i < features.length; i++){
+		feature_html += `<li>${features[i]}</li>`
+	}
+	$("#modal-features").html(feature_html)
+
+	// Load categories
+	var categories_html = ""
+	for(i = 0; i < categories.length; i++){
+		categories_html += `<span class="badge">${categories[i]}</span>`
+	}
+	$("#project-categories").html(categories_html)
 
 	// Check if git is available and then prepend the git button on the modal footer
+	var footer_html = `
+		<a class="project-link" href="" target="_blank">
+			<button class="text-center btn btn-default">View Project</button>
+		</a>
+		<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+		`
 	if(git != null){
-		var git_html = `
+		footer_html =`
 		<a class="git-link" href="${git}" target="_blank">
 			<button class="text-center btn btn-default">Git</button>
-		</a>
-		`
-		$('.modal-footer').prepend(git_html)
+		</a>` + footer_html
 	}
-
+	$('.modal-footer').html(footer_html)
+	$(".project-link").attr('href', link)
 }
 
 

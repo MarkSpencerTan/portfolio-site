@@ -29,15 +29,13 @@
 		      <ul class="nav navbar-nav">
 		        <li><a href="about.html">About</a></li>
 				<li class="dropdown">
-					<a class="dropdown-toggle" data-toggle="dropdown" href="#">Portfolio
-						<span class="caret"></span>
-					</a>
-					<ul class="dropdown-menu">
+					<a href="#portfolio">Portfolio</a>
+					<!-- <ul class="dropdown-menu">
 						<li><a href="#">Web Development</a></li>
 						<li><a href="#">Scripts</a></li>
 						<li><a href="#">Software</a></li>
 						<li><a href="#">Android</a></li>
-					</ul>
+					</ul> -->
 				</li>
 		        <li><a href="#">Contact</a></li>
 		      </ul>
@@ -66,8 +64,8 @@
 		<div id="portfolio" class="container-fluid bg-3 text-center">    
 			<h1 id="portfolio-title" class="lato-light">RECENT PROJECTS</h3><br>
 			<div id="categories" class="lato-light">
+				<button type="button" class="btn btn-secondary">All</button>
 				<button type="button" class="btn btn-secondary">Web Dev</button>
-				<button type="button" class="btn btn-secondary">Scripts</button>
 				<button type="button" class="btn btn-secondary">Software</button>
 				<button type="button" class="btn btn-secondary">Android</button>
 			</div>
@@ -97,7 +95,7 @@
 		        <button type="button" class="close" data-dismiss="modal">&times;</button>
 		        <h4 id="project-heading">The Flash</h4>
 		        <h4 id="project-subheading">Subtitle Here</h4><hr>
-		        <div id="project-catories" class="text-center"> 
+		        <div id="project-categories" class="text-center"> 
 		        	<span class="badge">Web Dev</span>
 		        	<span class="badge">Scripts</span>
 		        </div>
@@ -108,7 +106,7 @@
 		        <p id="project-desc">In my Cecs 300 class, we were asked to develop a wordpress website on anything we wanted to and I chose to make a website about a Super Hero from the DC comics – The Flash. I was inspired to make this website due to my great interest in the TV show that the CW is currently airing. This website is suppose to be a mock website of the webapp they have in the show, where common people can report and post information about new Super Humans (Meta Humans) roaming about their city.</p>
 		        <hr>
 		        <h4 class="modal-subtitle">Features</h4><hr>
-		        <ul>
+		        <ul id="modal-features">
 		        	<li>Bootstrap</li>
 		        	<li>CSS3</li>
 		        	<li>Bootstrap</li>

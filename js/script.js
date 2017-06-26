@@ -36,8 +36,9 @@ $('a[href*="#"]')
   });
 
 // Makes navbar 100% transparent after 1/2 of page scroll
-$(window).scroll(function () { 
 
+
+$(window).on('scroll', function () { 
   if ($(window).scrollTop() > $('#site-intro').height() ) {
     $('nav').css('background-color', 'rgba(255,255,255,1)');
     startLoadAnimation();

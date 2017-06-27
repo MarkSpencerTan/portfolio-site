@@ -8,6 +8,9 @@
   		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 		<link rel=stylesheet type="text/css" href="css/style.css">
+		<link rel=stylesheet type="text/css" href="css/timeline.css">
+		<link rel="stylesheet" type="text/css" href="css/timeline.css">
+
 		<!-- Google Font -->
 		<link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400" rel="stylesheet">
 	</head>
@@ -27,7 +30,6 @@
 		    </div>
 		    <div class="collapse navbar-collapse" id="myNavbar">
 		      <ul class="nav navbar-nav">
-		        <li><a href="about.html">About</a></li>
 				<li class="dropdown">
 					<a href="#portfolio">Portfolio</a>
 					<!-- <ul class="dropdown-menu">
@@ -37,6 +39,7 @@
 						<li><a href="#">Android</a></li>
 					</ul> -->
 				</li>
+		        <li><a href="#aboutme">About</a></li>
 		        <li><a href="#">Contact</a></li>
 		      </ul>
 		      <ul class="nav navbar-nav navbar-right">
@@ -62,7 +65,7 @@
 
 		<!-- Portfolio Section -->
 		<div id="portfolio" class="container-fluid bg-3 text-center">    
-			<h1 id="portfolio-title" class="lato-light">RECENT PROJECTS</h3><br>
+			<h1 id="portfolio-title" class="lato-light section-title">RECENT PROJECTS</h1><br>
 			<div id="categories" class="lato-light">
 				<button type="button" class="btn btn-secondary">All</button>
 				<button type="button" class="btn btn-secondary">Web Dev</button>
@@ -84,6 +87,64 @@
 					</a>
 				</div>				
 			</div>
+		</div>
+
+		<div id="aboutme" class="container-fluid text-center">
+			<h1 class="lato-light section-title">EDUCATION</h1><br>
+			<!-- The Timeline -->
+			<ul class="timeline">
+				<!-- Item 1 -->
+				<li>
+					<div class="direction-r">
+						<div class="flag-wrapper">
+							<span class="hexa"></span>
+							<span class="flag">Lorem ipsum.</span>
+							<span class="time-wrapper"><span class="time">Feb 2015</span></span>
+						</div>
+						<div class="desc">Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt proident.</div>
+					</div>
+				</li>
+
+				<!-- Item 2 -->
+				<li>
+					<div class="direction-l">
+						<div class="flag-wrapper">
+							<span class="hexa"></span>
+							<span class="flag">Lorem ipsum Anim.</span>
+							<span class="time-wrapper"><span class="time">Dec 2014</span></span>
+						</div>
+						<div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
+					</div>
+				</li>
+			</ul>
+
+			<h1 class="lato-light section-title" style="margin-top: 50px !important;">WORK</h1><br>
+			<!-- The Timeline -->
+			<ul class="timeline">
+				<!-- Item 1 -->
+				<li>
+					<div class="direction-r">
+						<div class="flag-wrapper">
+							<span class="hexa"></span>
+							<span class="flag">Lorem ipsum.</span>
+							<span class="time-wrapper"><span class="time">Feb 2015</span></span>
+						</div>
+						<div class="desc">Lorem ipsum Nisi labore aute do aute culpa magna nulla voluptate exercitation deserunt proident.</div>
+					</div>
+				</li>
+
+				<!-- Item 2 -->
+				<li>
+					<div class="direction-l">
+						<div class="flag-wrapper">
+							<span class="hexa"></span>
+							<span class="flag">Lorem ipsum Anim.</span>
+							<span class="time-wrapper"><span class="time">Dec 2014</span></span>
+						</div>
+						<div class="desc">Lorem ipsum In ut sit in dolor nisi ex magna eu anim anim tempor dolore aliquip enim cupidatat laborum dolore.</div>
+					</div>
+				</li>
+			</ul>
 		</div>
 
 		<!-- Modal -->
@@ -121,9 +182,9 @@
 
 		  </div>
 		</div>
-
+		
 		<!-- footer -->
-		<div id="footer" class="lato-light">MARK SPENCER TAN<br>mark@marktan.us</div>
+		<div id="footer" class="lato-light bg-3"> This portfolio site is created with simply bootstrap and some custom javascript :)<br>mark@marktan.us</div>
 
 	</body>
 </html>
@@ -137,3 +198,4 @@
 <script type="text/javascript" src="js/script.js"></script>
 <script type="text/javascript" src="js/polygonscript.js"></script>
 <script type="text/javascript" src="js/loadprojects.js"></script>
+<script type="text/javascript" src="js/timeline.js"></script>

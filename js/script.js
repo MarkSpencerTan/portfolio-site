@@ -39,12 +39,12 @@ $('a[href*="#"]')
 
 
 $(window).on('scroll', function () { 
-  if ($(window).scrollTop() > $('#site-intro').height() ) {
+  if ($(window).scrollTop() > $('#site-intro').height()*1.3 ) {
     $('nav').css('background-color', 'rgba(255,255,255,1)');
     startLoadAnimation();
   }
   else{
-    $('nav').css('background-color', 'rgba(255,255,255,.6)');
+    $('nav').css('background-color', 'rgba(255,255,255,.0)');
   } 
 });
 

@@ -55,7 +55,7 @@ ul.dropdown-menu {
 }
 
 #portfolio{
-	height: 100%;
+	/*height: 100%;*/
 	background: rgba(0, 0, 0, 0.6);
 }
 
@@ -72,7 +72,8 @@ ul.dropdown-menu {
 
 #portfolio .row{
 	margin:20%;
-	margin-top:20px;
+	margin-top:5%;
+	margin-bottom:10%; 
 }
 
 

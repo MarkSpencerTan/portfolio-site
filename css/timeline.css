@@ -197,6 +197,10 @@ header h1{
   z-index: 15;
 }
 
+.desc li{
+	padding: 0px;
+}
+
 .direction-l .desc,
 .direction-r .desc {
   position: relative;

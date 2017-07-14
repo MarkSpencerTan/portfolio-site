@@ -35,19 +35,25 @@ $('a[href*="#"]')
     }
   });
 
+
 // Makes navbar 100% transparent after 1/2 of page scroll
+$(window).on('DOMContentLoaded load resize scroll', function(){
+    var elementTop = $("#portfolio").offset().top;
+    var elementBottom = elementTop + $("#portfolio").outerHeight();
 
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
 
-$(window).on('scroll', function () { 
-  if ($(window).scrollTop() > $('#site-intro').height()*1.3 ) {
+  if(elementBottom > viewportTop && elementTop < viewportBottom){
+    // The element is visible, do something
     $('nav').css('background-color', 'rgba(255,255,255,1)');
     startLoadAnimation();
   }
-  else{
+  else {
+    // The element is not visible, do something else
     $('nav').css('background-color', 'rgba(255,255,255,.0)');
-  } 
+  }
 });
-
 
 // Fades portfolio items into view
 function startLoadAnimation(){
